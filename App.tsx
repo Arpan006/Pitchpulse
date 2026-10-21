@@ -5,6 +5,7 @@ import LiveResults from './components/LiveResults';
 import Footer from './components/Footer';
 import { LucideArrowUp } from 'lucide-react';
 import { Submission } from './types';
+import { Analytics } from '@vercel/analytics/react';
 
 const App: React.FC = () => {
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -80,6 +81,7 @@ const App: React.FC = () => {
       >
         <LucideArrowUp size={24} />
       </button>
+      <Analytics />
     </div>
   );
 };
